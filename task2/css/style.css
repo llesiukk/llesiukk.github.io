@@ -1,0 +1,3 @@
+.links a:nth-last-child(1) {
+    border-right: none;
+}
