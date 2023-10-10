@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лесюк Олександр ПІ-20-01</title>
+    <script>
+        function calculate() {            
+            let num1 = document.getElementById("number1").value
+            let num2 = document.getElementById("number2").value
+            
+            document.getElementById("result").value = Number(num1) + Number(num2)
+        }
+
+    </script>
+</head>
+<body>
+    <form style="max-width: 600px; margin: 0 auto;">
+        <input id="number1" type="number">
+        +
+        <input id="number2" type="number">
+        =
+        <input id="result" type="number" disabled>
+        <input id="inputButton" type="button" 
+        style="display: block; margin: 10px auto;" 
+        value="Додати два числа"
+        onclick="calculate();">
+    </form>
+</body>
+</html>
