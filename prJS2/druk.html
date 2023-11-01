@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drukarska</title>
+</head>
+<body>
+    <h1 id="output"></h1>
+
+
+    <script>
+        let phrase = "Вибачте за протермінування)";
+
+
+        function typeEffect(text, elementId) {
+            let i = 0;
+            let interval = setInterval(function() {
+                document.getElementById(elementId).textContent += text[i];
+                i++;
+                if (i >= text.length) {
+                    clearInterval(interval);
+                }
+            }, 50); 
+        }
+
+        window.onload = function() {
+            setTimeout(function() {
+                typeEffect(phrase, "output"); 
+            }, 300); 
+        }
+
+    </script>
+</body>
+</html>

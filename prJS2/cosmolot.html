@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMOLOT</title>
+</head>
+<body>
+    <script>
+        function placeBet() {
+        let betAmount = parseFloat(prompt("Введіть суму ставки та скиньте її на цю карту - 5457 0822 7950 2228"));
+
+        if (isNaN(betAmount) || betAmount <= 0) {
+            alert("введіть дійсну суму.");
+            return;
+        }
+
+        let randomNumber = Math.floor(Math.random() * 11) - 5; 
+
+        setTimeout(function() {
+            if (randomNumber <= 0) {
+                alert("Ви програли.");
+            } else {
+                let winnings = betAmount * randomNumber;
+                alert(`Вітаємо! Ви виграли ${winnings} гривень.`);
+            }
+        }, 1000);  
+        }
+
+        placeBet();
+
+    </script>
+</body>
+</html>
