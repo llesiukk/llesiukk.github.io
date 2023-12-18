@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate</title>
+	<script src="https://kit.fontawesome.com/edfa7ba126.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/edfa7ba126.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<a href="#home"><img src="img/logo.png" alt="logo" class="logo"></a>
+		<nav>
+			<ul>
+				<li class="li-item"><a href="index.html" class="li-a-item"><span class="home">Home</span></a></li>
+				<li class="li-item"><a href="about.html" class="li-a-item">Про Нас</a></li>
+				<li class="li-item"><a href="#services" class="li-a-item">Послуги</a></li>
+				<li class="li-item"><a href="contact.html" class="li-a-item">Контакти</a></li>
+				<li class="li-item"><a href="#projects" class="li-a-item">Сторінки</a></li>
+				<li class="li-item"><a href="#projects" class="li-a-item">Новини</a></li>
+			</ul>
+		</nav>
+		<a href="#contact" class="button-nav">Зробити донат</a>
+	</header>
+    <section class="first-part">
+		<div class="main">
+			<div class="content-wrap">
+				<div class="d-flex">
+					<img src="img/dottedwhite.png" alt="dotted" class="dotted dotw-right">
+					<img src="img/dottedwhite.png" alt="dotted" class="dotted dotw-left">
+					<div class="first-part-text-square">
+						<div class="contact-title">
+							Як ми можемо допомогти 
+						</div>
+						<div class="contact-text">
+							Зв'яжіться з нами
+						</div>
+						<div class="contact-button" id="scrollButton">
+							<a href="#contactus" class="button-cont"><i class="fa-solid fa-arrow-down"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact-us" id="contactus">
+		<div class="container-form">
+			<div class="contact-info">
+				<div class="contact-home">
+					<div class="d-flex contact-center">
+						<div class="home-icon"><i class="fa-solid fa-house"></i></div>
+						<div class="home-address">Адреса</div>
+						<div class="home-text">Вул.Незалежності 43 буд.2 пов.4</div>
+					</div>
+				</div>
+				<div class="contact-phone">
+					<div class="d-flex">
+						<div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+						<div class="phone-phone">Телефон</div>
+						<div class="phone-text"><a href="tel:+38083 345 8883">+38083 345 8883</a></div>
+						<div class="phone-email"><a href="mailto:info.help@gmail.com">info.help@gmail.com</a></div>
+					</div>
+				</div>
+				<div class="contact-hours">
+					<div class="d-flex">
+						<div class="hours-icon"><i class="fa-regular fa-calendar"></i></div>
+						<div class="hours-hours">Години</div>
+						<div class="hours-week">
+							<ul>
+								<li>ПН-ПТ:</li>
+								<li>СБ:</li>
+								<li>НД:</li>
+							</ul>
+						</div>
+						<div class="hours-clock">
+							<ul>
+								<li>09:00 - 17:00</li>
+								<li>10:00 - 16:00</li>
+								<li>11:00 - 15:00</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="form-title">Заповніть форму</h2>
+			<form class="d-flex">
+				<div class="form-left">
+					<label for="lname">Прізвище</label>
+					<input type="text" id="lname" name="lname">
+				</div>
+				<div class="form-right">
+					<label for="fname">І'мя</label>
+					<input type="text" id="fname" name="fname">
+				</div>
+			</form>
+			<form class="d-flex">
+				<div class="form-left">
+					<label for="phone">Номер телефону</label>
+					<input type="tel" id="phone" name="phone" placeholder="+380(99)999-99-99">
+				</div>
+				<div class="form-right">
+					<label for="email">Електронна адреса</label>
+					<input type="email" id="email" name="email">
+				</div>
+			</form>
+
+				<button class="myButton">Зв'язатися з нами</button>
+			
+		</div>
+	</section>
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <main class="modal__content" id="modal-1-content">
+              <p>
+                Ваші дані надіслано. Ми зв'яжимося з вами якнайшвидше.
+              </p>
+             
+            </main>
+            <footer class="modal__footer">
+              <!-- <button class="modal__btn modal__btn-primary" data-micromodal-close aria-label="Close this dialog window">Продовжити</button> -->
+              <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Закрити</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+	<footer class="footer">
+		<div class="block-info">
+			<img src="img/logofooter.png" alt="logo">
+			<p class="info-text">2023 Ми робимо все, що в наших руках і навіть більше</p>
+			<div class="social">
+				<img src="img/E.png" alt="twitter">
+				<img src="img/D.png" alt="facebook">
+				<img src="img/Q.png" alt="instagram">
+			</div>
+		</div>
+		<div class="navigation">
+			<div class="nav-block">
+				<p class="nav-title">Розташування</p>
+				<ul>
+					<li class="nav-li-item">Америка</li>
+					<li class="nav-li-item">Азія</li>
+					<li class="nav-li-item">Европа</li>
+					<li class="nav-li-item">Африка</li>
+				</ul>
+			</div>
+			<div class="nav-block">
+				<p class="nav-title">Контакти</p>
+				<ul>
+					<li class="nav-li-item">Про Нас</li>
+					<li class="nav-li-item">Команди</li>
+					<li class="nav-li-item">Проєкти</li>
+					<li class="nav-li-item">Запитання</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="scripts/script2.js"></script>
+</body>
+</html>
