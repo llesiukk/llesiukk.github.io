@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Введіть країну:</p>
+    <input type="text" id="countryInput" onkeydown="handleKeyPress(event)">
+<p id="countriesParagraph"></p>
+
+<script>
+function handleKeyPress(event) {
+  // Перевірка, чи була натиснута клавіша Enter (код 13)
+  if (event.key === "Enter") {
+    // Отримання значення введеної країни з елементу input
+    var countryInput = document.getElementById("countryInput");
+    var country = countryInput.value.trim();
+
+    // Перевірка, чи введено не порожнє значення
+    if (country !== "") {
+      // Отримання абзацу для виведення країн
+      var countriesParagraph = document.getElementById("countriesParagraph");
+
+      // Додавання нової країни до абзацу разом з комою та очищення поля вводу
+      countriesParagraph.textContent += country + ", ";
+      countryInput.value = "";
+    }
+
+    // Заборона подальшого поширення події (включаючи відправку форми)
+    event.preventDefault();
+  }
+}
+</script>
+</body>
+</html>
